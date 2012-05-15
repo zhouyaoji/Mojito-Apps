@@ -1,6 +1,6 @@
 YUI.add('addons-viewengine-hb', function(Y, NAME) {
 
-      var hb = require(__dirname + '/../../node_modules/handlebars'),
+      var hb = require('handlebars'),
          fs = require('fs');
 
 
