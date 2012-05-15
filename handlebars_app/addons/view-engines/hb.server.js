@@ -32,7 +32,6 @@ YUI.add('addons-viewengine-hb', function(Y, NAME) {
             Y.log('Rendering template "' + tmpl + '"', 'mojito', NAME);
             try {
               var template_str = this.compiler(tmpl);
-              template_str = template_str.replace(/\n\r\v\t/,"");
               var template = hb.compile(template_str);
               var result = template(data);
               console.log(result);
