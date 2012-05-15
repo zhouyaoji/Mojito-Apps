@@ -27,39 +27,26 @@ YUI.add('addons-viewengine-hb', function(Y, NAME) {
          * @param {boolean} more Whether there will be more content later.
          */
         render: function(data, mojitType, tmpl, adapter, meta, more) {
-            var me = this,
-                handleRender = function(output) {
-
-                    output.addListener('data', function(c) {
-                        adapter.flush(c, meta);
-                    });
-
-                    output.addListener('end', function() {
-                        if (!more) {
-                            Y.log('render complete for view "' +
-                                me.viewId + '"',
-                                'mojito', 'qeperf');
-                            adapter.done('', meta);
-                        }
-                    });
-                };
-
-            /*
-             * We can't use pre-compiled Mu templates on the server :(
-             */
-
-            // If we don't have a compliled template, make one.
+            var me = this;
+            // If we don't have a compiled template, make one.
             Y.log('Rendering template "' + tmpl + '"', 'mojito', NAME);
-            var template = hb.compile(this.compiler(tmpl));
-            var result = template(data);
-            console.log(result);
-            adapter.done(result,meta);
- 
+            try {
+              var template_str = this.compiler(tmpl);
+              template_str = template_str.replace(/\n\r\v\t/,"");
+              var template = hb.compile(template_str);
+              var result = template(data);
+              console.log(result);
+            }catch(e){
+             Y.log(e);
+            }
+            adapter.flush(result,meta);
+            if(!more) {
+              adapter.done('',meta);
+            }
         },
 
-
         compiler: function(tmpl) {
-            return JSON.stringify(fs.readFileSync(tmpl, 'utf8'));
+            return fs.readFileSync(tmpl, 'utf8');
         }
     };
 
