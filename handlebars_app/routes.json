@@ -1,0 +1,11 @@
+[
+  {
+    "settings": [ "master" ],
+      "/": {
+      "verbs": ["get"],
+      "path": "/",
+      "call": "myMojit.index"
+    }
+  }
+]
+

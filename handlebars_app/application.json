@@ -1,0 +1,16 @@
+[
+    {
+        "settings": [ "master" ],
+        "specs": {
+          "myMojit": {
+            "type": "myMojit"
+          }
+        }
+    },
+    {
+        "settings": [ "environment:development" ],
+        "staticHandling": {
+            "forceUpdate": true
+        }
+    }
+]
