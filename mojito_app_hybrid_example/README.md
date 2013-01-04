@@ -1,5 +1,9 @@
 # Mojito Hybrid Example Application
 
+This is modified version of Ric Allinson's app https://github.com/ricallinson/mojito_app_hybrid_example.
+The modifications are so that the application is compatible with Mojito v0.5.
+
+
 Check out the application.
 
     > git clone https://github.com/capecodehq/mojito_app_hybrid_example.git
