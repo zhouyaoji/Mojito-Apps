@@ -1,0 +1,36 @@
+[
+    {
+        "settings": [ "master" ],
+
+        "default": {
+            "path": "/",
+            "call": "yahoo.hybrid.app_specs.index"
+        },
+
+        "web_app_index": {
+            "path": "/index.html",
+            "call": "yahoo.hybrid.app_specs.index"
+        }
+    },
+    {
+        "settings": [ "environment:prod-native-ycrt" ],
+
+        "ycrt_index": {
+            "path": "/yahoo.application.mojito_app_hybrid_example/index.html",
+            "call": "yahoo.hybrid.app_specs.loader"
+        }
+    },
+    {
+        "settings": [ "environment:prod-webapp" ],
+
+        "default": {
+            "path": "/",
+            "call": "yahoo.hybrid.app_specs.loader"
+        },
+
+        "web_app_index": {
+            "path": "/index.html",
+            "call": "yahoo.hybrid.app_specs.loader"
+        }
+    }
+]

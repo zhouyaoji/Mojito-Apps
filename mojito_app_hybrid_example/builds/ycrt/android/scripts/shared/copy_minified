@@ -1,0 +1,35 @@
+#!/bin/bash
+# Copies a source folder to a target folder excluding debug or raw .js files.
+# Call copy_minified <src-dir> <dest-dir>
+# i.e. copy_minified ../yui3/build ../packages/yahoo.libs.yui
+# author: Anne-Lise Hassenklover
+#  Copyright Yahoo! Inc. 2011. All rights reserved.
+
+E_MISSING_REQUIRED_ARGS=1
+
+script_name=`basename $0`
+script_path=`dirname $0`
+src_project_name="template"
+
+# The first argument will be the directory to copy the files from, the second argument is where the files go.
+
+if [[ -n "$1" && -n "$2" ]]
+then
+	# First copy all files except *.js and *.css since these have min versions that we only want to copy
+	rsync -recursive --cvs-exclude --exclude-from="$script_path/exclude_withmin.txt" "$1" "$2"
+	if [[ "$?" == 0 ]]
+	then
+		# Now copy just the min.js files but be careful not to exclude the lang javascript files which do not have -min in them.
+		rsync -recursive --cvs-exclude --include-from="$script_path/include_withmin.txt" --exclude-from="$script_path/exclude_withmin.txt" "$1" "$2"
+	else
+		exit $?
+	fi
+else
+echo "ERROR: Missing parameters"
+echo "format: ./$script_name <src-dir> <dest-dir>"
+echo "sample: ./$script_name ../yui3/build ../packages/yahoo.libs.yui"
+
+exit $E_MISSING_REQUIRED_ARGS
+fi
+
+exit 0

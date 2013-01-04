@@ -1,0 +1,9 @@
+{
+    "name": "yahoo.libs.yui",
+
+    "yahoo": {
+        "mojito": {
+            "version": "*"
+        }
+    }
+}

@@ -1,0 +1,20 @@
+# Make example for gh-pages
+
+rm -rf ./builds/edge-cache*
+
+cd ./app
+mojito build html5app --context environment:prod-webapp ../builds/edge-cache
+
+cd ../builds/edge-cache
+
+# Clean up before me move files around
+
+rm -rf ./yahoo.application.mojito_app_hybrid_example
+
+# Clean up before me move files around
+
+rm -r ./HTMLFrameMojit/
+rm -r ./LazyLoad/
+rm -r ./TunnelProxy/
+rm ./cache.manifest
+rm ./index.js

@@ -1,0 +1,15 @@
+[
+    {
+        "settings": [ "master" ],
+
+        "config": {
+            "assets": {
+                "top": {
+                    "css": [
+                        "./screen.css"
+                    ]
+                }
+            }
+        }
+    }
+]

@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A770D9D152B9CB600886C07 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A770D9C152B9CB600886C07 /* CoreMotion.framework */; };
+		424EE076152FACB500830C51 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424EE075152FACB500830C51 /* SystemConfiguration.framework */; };
+		5613AB3F15E5FDCC0085E3CE /* icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = 5613AB3E15E5FDCC0085E3CE /* icon-144.png */; };
+		5613AB4115E5FDFC0085E3CE /* icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 5613AB4015E5FDFC0085E3CE /* icon-114.png */; };
+		5613AB4315E5FE420085E3CE /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 5613AB4215E5FE420085E3CE /* icon-72.png */; };
+		5613AB4515E5FE5F0085E3CE /* icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 5613AB4415E5FE5F0085E3CE /* icon-57.png */; };
+		930E6AE014EDD1BF00C40A02 /* ychromert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 930E6ADF14EDD1BF00C40A02 /* ychromert.framework */; };
+		9329982F14F44AED00616091 /* yahoo.ychrome.lib in Resources */ = {isa = PBXBuildFile; fileRef = 9329982E14F44AED00616091 /* yahoo.ychrome.lib */; };
+		932B383214E9F8DE001778C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932B383114E9F8DE001778C1 /* UIKit.framework */; };
+		932B383414E9F8DE001778C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932B383314E9F8DE001778C1 /* Foundation.framework */; };
+		932B383614E9F8DE001778C1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932B383514E9F8DE001778C1 /* CoreGraphics.framework */; };
+		932B383C14E9F8DE001778C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 932B383A14E9F8DE001778C1 /* InfoPlist.strings */; };
+		932B383E14E9F8DE001778C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 932B383D14E9F8DE001778C1 /* main.m */; };
+		932B384214E9F8DE001778C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 932B384114E9F8DE001778C1 /* AppDelegate.m */; };
+		932B384514E9F8DE001778C1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 932B384414E9F8DE001778C1 /* ViewController.m */; };
+		932B384814E9F8DE001778C1 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 932B384614E9F8DE001778C1 /* ViewController_iPhone.xib */; };
+		932B384B14E9F8DE001778C1 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 932B384914E9F8DE001778C1 /* ViewController_iPad.xib */; };
+		932B385314E9F8DE001778C1 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932B385214E9F8DE001778C1 /* SenTestingKit.framework */; };
+		932B385414E9F8DE001778C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932B383114E9F8DE001778C1 /* UIKit.framework */; };
+		932B385514E9F8DE001778C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932B383314E9F8DE001778C1 /* Foundation.framework */; };
+		932B385D14E9F8DE001778C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 932B385B14E9F8DE001778C1 /* InfoPlist.strings */; };
+		932B386014E9F8DE001778C1 /* mojito_app_hybrid_exampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 932B385F14E9F8DE001778C1 /* mojito_app_hybrid_exampleTests.m */; };
+		935B88011505A0E3007BF13A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 935B88001505A0E3007BF13A /* Security.framework */; };
+		93A7BF1514F5B0020060ACCD /* packages in Resources */ = {isa = PBXBuildFile; fileRef = 93A7BF1414F5B0020060ACCD /* packages */; };
+		93E355DA152516DF003225A9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E355D9152516DE003225A9 /* MobileCoreServices.framework */; };
+		93E355DC1525176A003225A9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4273F99D1501ABA50083F495 /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		932B385614E9F8DE001778C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 932B382414E9F8DD001778C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 932B382C14E9F8DE001778C1;
+			remoteInfo = mojito_app_hybrid_example;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A770D9C152B9CB600886C07 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		424EE075152FACB500830C51 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4273F99D1501ABA50083F495 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5613AB3E15E5FDCC0085E3CE /* icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-144.png"; sourceTree = "<group>"; };
+		5613AB4015E5FDFC0085E3CE /* icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-114.png"; sourceTree = "<group>"; };
+		5613AB4215E5FE420085E3CE /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72.png"; sourceTree = "<group>"; };
+		5613AB4415E5FE5F0085E3CE /* icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-57.png"; sourceTree = "<group>"; };
+		930E6ADF14EDD1BF00C40A02 /* ychromert.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ychromert.framework; path = frameworks/ychromert.framework; sourceTree = "<group>"; };
+		9329982E14F44AED00616091 /* yahoo.ychrome.lib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = yahoo.ychrome.lib; sourceTree = "<group>"; };
+		932B382D14E9F8DE001778C1 /* Cuppa Joe News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cuppa Joe News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		932B383114E9F8DE001778C1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		932B383314E9F8DE001778C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		932B383514E9F8DE001778C1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		932B383914E9F8DE001778C1 /* mojito_app_hybrid_example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mojito_app_hybrid_example-Info.plist"; sourceTree = "<group>"; };
+		932B383B14E9F8DE001778C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		932B383D14E9F8DE001778C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		932B383F14E9F8DE001778C1 /* mojito_app_hybrid_example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mojito_app_hybrid_example-Prefix.pch"; sourceTree = "<group>"; };
+		932B384014E9F8DE001778C1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		932B384114E9F8DE001778C1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		932B384314E9F8DE001778C1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		932B384414E9F8DE001778C1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		932B384714E9F8DE001778C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		932B384A14E9F8DE001778C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		932B385114E9F8DE001778C1 /* mojito_app_hybrid_exampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mojito_app_hybrid_exampleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		932B385214E9F8DE001778C1 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		932B385A14E9F8DE001778C1 /* mojito_app_hybrid_exampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mojito_app_hybrid_exampleTests-Info.plist"; sourceTree = "<group>"; };
+		932B385C14E9F8DE001778C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		932B385E14E9F8DE001778C1 /* mojito_app_hybrid_exampleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mojito_app_hybrid_exampleTests.h; sourceTree = "<group>"; };
+		932B385F14E9F8DE001778C1 /* mojito_app_hybrid_exampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mojito_app_hybrid_exampleTests.m; sourceTree = "<group>"; };
+		935B88001505A0E3007BF13A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		93A7BF1414F5B0020060ACCD /* packages */ = {isa = PBXFileReference; lastKnownFileType = folder; path = packages; sourceTree = "<group>"; };
+		93E355D9152516DE003225A9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		932B382A14E9F8DE001778C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				424EE076152FACB500830C51 /* SystemConfiguration.framework in Frameworks */,
+				3A770D9D152B9CB600886C07 /* CoreMotion.framework in Frameworks */,
+				932B383614E9F8DE001778C1 /* CoreGraphics.framework in Frameworks */,
+				932B383414E9F8DE001778C1 /* Foundation.framework in Frameworks */,
+				93E355DA152516DF003225A9 /* MobileCoreServices.framework in Frameworks */,
+				935B88011505A0E3007BF13A /* Security.framework in Frameworks */,
+				932B383214E9F8DE001778C1 /* UIKit.framework in Frameworks */,
+				930E6AE014EDD1BF00C40A02 /* ychromert.framework in Frameworks */,
+				93E355DC1525176A003225A9 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		932B384D14E9F8DE001778C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				932B385314E9F8DE001778C1 /* SenTestingKit.framework in Frameworks */,
+				932B385414E9F8DE001778C1 /* UIKit.framework in Frameworks */,
+				932B385514E9F8DE001778C1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9329982C14F44A5D00616091 /* packages */ = {
+			isa = PBXGroup;
+			children = (
+				9329982E14F44AED00616091 /* yahoo.ychrome.lib */,
+			);
+			name = packages;
+			path = ../frameworks/ychromert.framework/packages;
+			sourceTree = "<group>";
+		};
+		932B382214E9F8DD001778C1 = {
+			isa = PBXGroup;
+			children = (
+				5613AB4415E5FE5F0085E3CE /* icon-57.png */,
+				5613AB4215E5FE420085E3CE /* icon-72.png */,
+				5613AB4015E5FDFC0085E3CE /* icon-114.png */,
+				5613AB3E15E5FDCC0085E3CE /* icon-144.png */,
+				93A7BF1414F5B0020060ACCD /* packages */,
+				932B383714E9F8DE001778C1 /* mojito_app_hybrid_example */,
+				932B385814E9F8DE001778C1 /* mojito_app_hybrid_exampleTests */,
+				932B383014E9F8DE001778C1 /* Frameworks */,
+				932B382E14E9F8DE001778C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		932B382E14E9F8DE001778C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				932B382D14E9F8DE001778C1 /* Cuppa Joe News.app */,
+				932B385114E9F8DE001778C1 /* mojito_app_hybrid_exampleTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		932B383014E9F8DE001778C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				424EE075152FACB500830C51 /* SystemConfiguration.framework */,
+				3A770D9C152B9CB600886C07 /* CoreMotion.framework */,
+				4273F99D1501ABA50083F495 /* CoreLocation.framework */,
+				93E355D9152516DE003225A9 /* MobileCoreServices.framework */,
+				930E6ADF14EDD1BF00C40A02 /* ychromert.framework */,
+				932B383114E9F8DE001778C1 /* UIKit.framework */,
+				932B383314E9F8DE001778C1 /* Foundation.framework */,
+				932B383514E9F8DE001778C1 /* CoreGraphics.framework */,
+				932B385214E9F8DE001778C1 /* SenTestingKit.framework */,
+				935B88001505A0E3007BF13A /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		932B383714E9F8DE001778C1 /* mojito_app_hybrid_example */ = {
+			isa = PBXGroup;
+			children = (
+				932B384014E9F8DE001778C1 /* AppDelegate.h */,
+				932B384114E9F8DE001778C1 /* AppDelegate.m */,
+				932B384314E9F8DE001778C1 /* ViewController.h */,
+				932B384414E9F8DE001778C1 /* ViewController.m */,
+				932B384614E9F8DE001778C1 /* ViewController_iPhone.xib */,
+				932B384914E9F8DE001778C1 /* ViewController_iPad.xib */,
+				932B387014E9FA2D001778C1 /* Resources */,
+				932B383814E9F8DE001778C1 /* Supporting Files */,
+			);
+			path = mojito_app_hybrid_example;
+			sourceTree = "<group>";
+		};
+		932B383814E9F8DE001778C1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				932B383914E9F8DE001778C1 /* mojito_app_hybrid_example-Info.plist */,
+				932B383A14E9F8DE001778C1 /* InfoPlist.strings */,
+				932B383D14E9F8DE001778C1 /* main.m */,
+				932B383F14E9F8DE001778C1 /* mojito_app_hybrid_example-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		932B385814E9F8DE001778C1 /* mojito_app_hybrid_exampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				932B385E14E9F8DE001778C1 /* mojito_app_hybrid_exampleTests.h */,
+				932B385F14E9F8DE001778C1 /* mojito_app_hybrid_exampleTests.m */,
+				932B385914E9F8DE001778C1 /* Supporting Files */,
+			);
+			path = mojito_app_hybrid_exampleTests;
+			sourceTree = "<group>";
+		};
+		932B385914E9F8DE001778C1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				932B385A14E9F8DE001778C1 /* mojito_app_hybrid_exampleTests-Info.plist */,
+				932B385B14E9F8DE001778C1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		932B387014E9FA2D001778C1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				932B387714E9FAA8001778C1 /* icons */,
+				9329982C14F44A5D00616091 /* packages */,
+				932B387E14E9FAC3001778C1 /* splash */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		932B387714E9FAA8001778C1 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = icons;
+			sourceTree = "<group>";
+		};
+		932B387E14E9FAC3001778C1 /* splash */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = splash;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		932B382C14E9F8DE001778C1 /* mojito_app_hybrid_example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 932B386314E9F8DE001778C1 /* Build configuration list for PBXNativeTarget "mojito_app_hybrid_example" */;
+			buildPhases = (
+				932B382914E9F8DE001778C1 /* Sources */,
+				932B382A14E9F8DE001778C1 /* Frameworks */,
+				932B382B14E9F8DE001778C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mojito_app_hybrid_example;
+			productName = mojito_app_hybrid_example;
+			productReference = 932B382D14E9F8DE001778C1 /* Cuppa Joe News.app */;
+			productType = "com.apple.product-type.application";
+		};
+		932B385014E9F8DE001778C1 /* mojito_app_hybrid_exampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 932B386614E9F8DE001778C1 /* Build configuration list for PBXNativeTarget "mojito_app_hybrid_exampleTests" */;
+			buildPhases = (
+				932B384C14E9F8DE001778C1 /* Sources */,
+				932B384D14E9F8DE001778C1 /* Frameworks */,
+				932B384E14E9F8DE001778C1 /* Resources */,
+				932B384F14E9F8DE001778C1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				932B385714E9F8DE001778C1 /* PBXTargetDependency */,
+			);
+			name = mojito_app_hybrid_exampleTests;
+			productName = mojito_app_hybrid_exampleTests;
+			productReference = 932B385114E9F8DE001778C1 /* mojito_app_hybrid_exampleTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		932B382414E9F8DD001778C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Yahoo! Inc";
+			};
+			buildConfigurationList = 932B382714E9F8DD001778C1 /* Build configuration list for PBXProject "Cuppa Joe News" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 932B382214E9F8DD001778C1;
+			productRefGroup = 932B382E14E9F8DE001778C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				932B382C14E9F8DE001778C1 /* mojito_app_hybrid_example */,
+				932B385014E9F8DE001778C1 /* mojito_app_hybrid_exampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		932B382B14E9F8DE001778C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				932B383C14E9F8DE001778C1 /* InfoPlist.strings in Resources */,
+				932B384814E9F8DE001778C1 /* ViewController_iPhone.xib in Resources */,
+				932B384B14E9F8DE001778C1 /* ViewController_iPad.xib in Resources */,
+				9329982F14F44AED00616091 /* yahoo.ychrome.lib in Resources */,
+				93A7BF1514F5B0020060ACCD /* packages in Resources */,
+				5613AB3F15E5FDCC0085E3CE /* icon-144.png in Resources */,
+				5613AB4115E5FDFC0085E3CE /* icon-114.png in Resources */,
+				5613AB4315E5FE420085E3CE /* icon-72.png in Resources */,
+				5613AB4515E5FE5F0085E3CE /* icon-57.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		932B384E14E9F8DE001778C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				932B385D14E9F8DE001778C1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		932B384F14E9F8DE001778C1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		932B382914E9F8DE001778C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				932B383E14E9F8DE001778C1 /* main.m in Sources */,
+				932B384214E9F8DE001778C1 /* AppDelegate.m in Sources */,
+				932B384514E9F8DE001778C1 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		932B384C14E9F8DE001778C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				932B386014E9F8DE001778C1 /* mojito_app_hybrid_exampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		932B385714E9F8DE001778C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 932B382C14E9F8DE001778C1 /* mojito_app_hybrid_example */;
+			targetProxy = 932B385614E9F8DE001778C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		932B383A14E9F8DE001778C1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				932B383B14E9F8DE001778C1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		932B384614E9F8DE001778C1 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				932B384714E9F8DE001778C1 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		932B384914E9F8DE001778C1 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				932B384A14E9F8DE001778C1 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		932B385B14E9F8DE001778C1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				932B385C14E9F8DE001778C1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		932B386114E9F8DE001778C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		932B386214E9F8DE001778C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		932B386414E9F8DE001778C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mojito_app_hybrid_example/mojito_app_hybrid_example-Prefix.pch";
+				INFOPLIST_FILE = "mojito_app_hybrid_example/mojito_app_hybrid_example-Info.plist";
+				PRODUCT_NAME = "Cuppa Joe News";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		932B386514E9F8DE001778C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mojito_app_hybrid_example/mojito_app_hybrid_example-Prefix.pch";
+				INFOPLIST_FILE = "mojito_app_hybrid_example/mojito_app_hybrid_example-Info.plist";
+				PRODUCT_NAME = "Cuppa Joe News";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		932B386714E9F8DE001778C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/mojito_app_hybrid_example.app/mojito_app_hybrid_example";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mojito_app_hybrid_example/mojito_app_hybrid_example-Prefix.pch";
+				INFOPLIST_FILE = "mojito_app_hybrid_exampleTests/mojito_app_hybrid_exampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		932B386814E9F8DE001778C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/mojito_app_hybrid_example.app/mojito_app_hybrid_example";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mojito_app_hybrid_example/mojito_app_hybrid_example-Prefix.pch";
+				INFOPLIST_FILE = "mojito_app_hybrid_exampleTests/mojito_app_hybrid_exampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		932B382714E9F8DD001778C1 /* Build configuration list for PBXProject "Cuppa Joe News" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				932B386114E9F8DE001778C1 /* Debug */,
+				932B386214E9F8DE001778C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		932B386314E9F8DE001778C1 /* Build configuration list for PBXNativeTarget "mojito_app_hybrid_example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				932B386414E9F8DE001778C1 /* Debug */,
+				932B386514E9F8DE001778C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		932B386614E9F8DE001778C1 /* Build configuration list for PBXNativeTarget "mojito_app_hybrid_exampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				932B386714E9F8DE001778C1 /* Debug */,
+				932B386814E9F8DE001778C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 932B382414E9F8DD001778C1 /* Project object */;
+}

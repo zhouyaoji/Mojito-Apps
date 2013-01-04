@@ -1,0 +1,26 @@
+{{#items}}<li>
+    <div class="card">
+        {{#images}}
+        <img src="{{src}}" alt="{{title}}">
+        {{/images}}
+        <!--
+        FB Makes the CSS jump about. Need to find out why?
+        <div class="fb-like">
+            <fb:like data-href="{{url}}" send="false" layout="button_count" width="100" show_faces="false" action="recommend" font="lucida grande"></fb:like>
+        </div>
+        -->
+        <h3>
+            <!-- <a href="{{url}}" alt="{{title}}" target="_open">{{title}}</a> -->
+            {{title}}
+        </h3>
+        <div class="body">
+            {{body}}
+        </div>
+        <div class="date">
+            {{date}} - <h4>{{group}}</h4>
+        </div>
+        <div class="tools">
+            <a href="{{url}}" class="www" alt="{{title}}" target="_open">Read the full story</a>
+        </div>
+    </div>
+</li>{{/items}}

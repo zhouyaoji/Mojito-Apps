@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="Override.Widget.Button" parent="android:Widget.Holo.Button">
+ 		<item name="android:minWidth">32px</item>
+ 		<item name="android:minHeight">32px</item>
+ 	</style>
+    <style name="Theme.NoTitleBarBlackBackground" parent="android:Theme.Holo.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/standard_activity_background</item>
+ 		<item name="android:colorBackground">@color/standard_activity_background</item>
+ 		<item name="android:buttonStyle">@style/Override.Widget.Button</item>
+	</style>
+</resources>

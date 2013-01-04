@@ -1,0 +1,9 @@
+<div id="{{mojit_view_id}}" class="topics">
+	<ol>
+		{{#feeds}}
+			<li>
+				<a href="#{{id}}" {{#selected}} class="selected"{{/selected}} data-feedId="{{id}}">{{title}}</a>
+			</li>
+		{{/feeds}}
+	</ol>
+</div>

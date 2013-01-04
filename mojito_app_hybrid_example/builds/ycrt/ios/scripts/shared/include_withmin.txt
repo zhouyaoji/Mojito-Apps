@@ -1,0 +1,9 @@
+*-min.js
+*-min.css
+assets/*
+lang/*
+lang/*/*
+lang/*/*/*
+skins/*
+skins/*/*
+skins/*/*/*

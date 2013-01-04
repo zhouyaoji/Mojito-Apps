@@ -1,0 +1,42 @@
+[
+    {
+        "settings": [ "master" ],
+
+        "type": "HTMLFrameMojit",
+        "shareYUIInstance": true,
+        "config": {
+            "deploy": true,
+            "title": "Cuppa Joe News",
+            "child": {
+                "type": "yahoo.hybrid.infinite_nav"
+            },
+            "assets": {
+                "top": {
+                    "blob": [
+                        "<meta name=\"apple-mobile-web-app-capable\" content=\"yes\">",
+                        "<link rel=\"apple-touch-icon\" href=\"./yahoo.hybrid.infinite_nav/assets/apple-app-icon.png\"/>",
+                        "<meta name=\"viewport\" content=\"user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0\"/>"
+                    ],
+                    "css": [
+                        "http://yui.yahooapis.com/3.5.1/build/cssreset/cssreset-min.css"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "settings": [ "environment:prod-webapp" ],
+
+        "config": {
+            "assets": {
+                "top": {
+                    "blob": [
+                        "<meta name=\"apple-mobile-web-app-capable\" content=\"yes\">",
+                        "<link rel=\"apple-touch-icon\" href=\"./yahoo.hybrid.infinite_nav/assets/apple-app-icon.png\"/>",
+                        "<meta name=\"viewport\" content=\"user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0\"/>"
+                    ]
+                }
+            }
+        }
+    }
+]

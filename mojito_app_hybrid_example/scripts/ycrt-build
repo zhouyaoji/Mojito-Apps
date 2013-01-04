@@ -1,0 +1,22 @@
+# Make YCRT examples
+
+echo "Building App"
+rm -r ./builds/ycrt/ios/packages*
+
+cd ./app
+mojito build html5app --context environment:prod-native-ycrt ../builds/ycrt/ios/packages
+
+cd ../builds/ycrt/ios/packages
+rm -r ./HTMLFrameMojit
+rm -r ./LazyLoad
+rm -r ./TunnelProxy
+rm ./cache.manifest
+rm ./index.js
+rm ./index.html
+
+echo "Now copy the files into Android"
+
+rm -r ../../android/assets/packages*
+cp -r ./ ../../android/assets/packages/
+
+echo "Done."

@@ -1,0 +1,15 @@
+{
+    "dependencies": {
+     },
+    "maintainers": [
+		{"email": "sdesai@yahoo-inc.com",
+         "name": "Satyen Desai"
+    	},
+		{"email": "dlow@yahoo-inc.com",
+         "name": "Daryl Low"
+    	}
+	],
+    "name": "yahoo.ychrome.lib",
+    "pkg_type": "lib",
+    "version": "0.0.1"
+}

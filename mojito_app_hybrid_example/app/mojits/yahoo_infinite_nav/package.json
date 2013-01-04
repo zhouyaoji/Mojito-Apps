@@ -1,0 +1,10 @@
+
+{
+    "name": "yahoo.hybrid.infinite_nav",
+
+    "yahoo": {
+        "mojito": {
+            "version": "*"
+        }
+    }
+}

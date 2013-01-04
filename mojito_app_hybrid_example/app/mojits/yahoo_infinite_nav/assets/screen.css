@@ -1,0 +1,97 @@
+
+html {
+    background-color: #fff;
+    /* Stop the links from being highlighted when selected */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Main Content */
+
+.main {
+    font-family: helvetica, ariel, sans-serif;
+}
+
+/* Loader Screens */
+
+.main-loader{
+    padding: 3em 0 1em 0;
+    color: #999;
+    font-size: 130%;
+    line-height: 2em;
+    text-align: center;
+    background: url(./spinner.gif) no-repeat bottom;
+}
+
+.main-loader span {
+    display: block;
+    height: 50px;
+    background: url("./yl.png") no-repeat center center;
+}
+
+.main-loader em {
+    font-weight: bold;
+}
+
+.hd {
+    z-index: 10000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #eee;
+    font-size: 150%;
+    width: 100%;
+    text-align: right;
+    background: #000 url("./y.png") no-repeat left center;
+}
+
+.hd a {
+    display: inline-block;
+    padding: 0.5em;
+    color: #eee;
+    text-decoration: none;
+}
+
+.bd {
+    padding-top: 3.2em;
+}
+
+/*
+    reload-popup
+*/
+
+.reload-popup {
+    opacity: 0;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.reload-popup .msg{
+    display: inline-block;
+    padding: 5em 0 2em 0;
+    line-height: 2em;
+    background-color: #fff;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+}
+
+.reload-popup h2{
+    color: #aaa;
+    padding-top: 3.3em;
+    background: url("./yl.png") no-repeat top center;
+}
+
+.reload-popup a{
+    color: #024A68;
+    font-size: 140%;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 0.5em;
+}

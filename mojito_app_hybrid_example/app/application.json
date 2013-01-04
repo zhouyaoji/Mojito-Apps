@@ -1,0 +1,54 @@
+[
+    {
+        "settings": [ "master" ],
+
+        "shareYUIInstance": true,
+
+        "staticHandling": {
+            "prefix": "",
+            "appName": "yahoo.hybrid.app",
+            "frameworkName": "yahoo.hybrid.mojito"
+        },
+        "builds": {
+            "html5app": {
+                "-forceRelativePaths": true,
+                "-urls": [
+                    "/yahoo.application.mojito_app_hybrid_example/index.html"
+                ]
+            }
+        }
+    },
+    {
+        "settings": [ "environment:prod-native" ],
+
+        "yui": {
+            "dependencyCalculations" : "ondemand",
+            "base": "/$$staticHandling.prefix$$/yahoo.libs.yui/assets/",
+            "url": "$$yui.base$$yui/yui-min.js",
+            "loader": "loader/loader-min.js"
+        }
+    },
+    {
+        "settings": [ "environment:prod-native-ycrt" ],
+
+        "yui": {
+            "base": "/yahoo.libs.yui/assets/"
+        },
+        "builds": {
+            "html5app": {
+                "urls": [
+                    "/yahoo.application.mojito_app_hybrid_example/index.html"
+                ]
+            }
+        }
+    },
+    {
+        "settings": [ "environment:prod-webapp" ],
+
+        "builds": {
+            "html5app": {
+                "forceRelativePaths": true
+            }
+        }
+    }
+]
