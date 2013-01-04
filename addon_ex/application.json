@@ -1,4 +1,5 @@
 [
+
     {
         "settings": [ "master" ],
         "appPort": "8666",
