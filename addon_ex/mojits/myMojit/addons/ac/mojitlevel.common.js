@@ -1,4 +1,4 @@
-YUI.add('addon-ac-cheese', function(Y, NAME) {
+YUI.add('addon-ac-mojitlevel', function(Y, NAME) {
   function MojitLevelAddon(command, adapter, ac) {
   }
   MojitLevelAddon.prototype = {
