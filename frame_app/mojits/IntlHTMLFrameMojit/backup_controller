@@ -84,7 +84,21 @@ YUI.add('IntlHTMLFrameMojit', function (Y, NAME) {
             var children = ac.config.get('children'),
                 cfg;
              
-            cfg = { children: children, assets: ac.config.get('assets')};
+            // Map the action to the child if the action
+            // is not specified as part of the child config.
+            child.action = child.action || ac.action;
+            Y.log(children);
+            // Create a config object for the composite addon
+            /*
+            cfg = {
+                children: {
+                    child: child
+                },
+                assets: ac.config.get('assets')
+            };
+            */
+
+            cfg = { children, assets: ac.config.get('assets')};
             // Now execute the child as a composite
             ac.composite.execute(cfg, callback);
         }

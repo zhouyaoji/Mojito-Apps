@@ -13,7 +13,8 @@
           }
     ],
     "dependencies": {
-        "mojito": "0.5.x"
+        "mojito": "0.5.x",
+        "shaker": "3.0.x"
     },
     "engines": {
         "node": ">0.6"

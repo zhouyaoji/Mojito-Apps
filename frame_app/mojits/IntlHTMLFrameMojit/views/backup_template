@@ -1,5 +1,3 @@
-
-
 <html>
 <head>
 <script type="text/javascript">var MOJITO_INIT=new Date().getTime();</script>
@@ -18,18 +16,11 @@
 <body>
 <div id="intl_frame" class="header" style="border: dashed black 1px; margin: 10px 10px 10px 10px;">
 <h3>{{{name}}} {{{says}} {{{greeting}}} {{{preposition}}} {{{today}}}</h3>
-<div id="{{mojit_view_id}}" class="mojit" style="border: dashed black 1px;">
-  <h1>{{title}}</h1>
-  <div class="header" style="border: dashed black 1px; margin: 10px 10px 10px 10px;">
-    {{{header}}}
-  </div>
-  <div class="body" style="border: dashed black 1px; margin: 10px 10px 10px 10px;">
-    {{{body}}}
-  </div>
-  <div class="footer" style="border: dashed black 1px; margin: 10px 10px 10px 10px;">
-    {{{footer}}}
-  </div>
+
+{{{child}}}
+
+{{{bottom}}}
 </div>
-</div>
+
 </body>
 </html>
