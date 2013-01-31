@@ -1,0 +1,11 @@
+[{
+    "settings": [ "master" ],
+    "lp_route": {
+         "path": "/local_partial",
+         "call": "lp.index"
+    },
+    "gp_route": {
+         "path": "/global_partial",
+         "call": "gp.index"
+    }
+}]

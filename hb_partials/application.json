@@ -1,0 +1,20 @@
+[
+    {
+        "settings": [ "master" ],
+        "appPort": "8666",
+        "specs": {
+             "lp": {
+                   "type": "partialsMojit"
+             },
+             "gp": {
+                   "type": "globalPartialsMojit"
+             }
+        }
+    },
+    {
+        "settings": [ "environment:development" ],
+        "staticHandling": {
+            "forceUpdate": true
+        }
+    }
+]
