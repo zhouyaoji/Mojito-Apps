@@ -1,0 +1,8 @@
+[{
+    "settings": [ "master" ],
+    "/": {
+       "path": "/",
+       "call": "helper.index",
+       "verbs": [ "get", "put", "post" ]
+    }
+}]
