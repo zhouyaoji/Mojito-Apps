@@ -3,9 +3,16 @@
         "settings": [ "master" ],
         "appPort": "8666",
         "specs": {
-          "helper": {
-            "type": "helperMojit"
-          }
+          "frame": {
+             "type": "HTMLFrameMojit",
+              "config": {
+                "deploy": true,
+                "title": "Hi",
+                "child": {
+                  "type": "helperMojit"
+                }
+             }
+           }
         }
     },
     {

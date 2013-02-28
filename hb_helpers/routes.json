@@ -2,7 +2,7 @@
     "settings": [ "master" ],
     "/": {
        "path": "/",
-       "call": "helper.index",
+       "call": "frame.index",
        "verbs": [ "get", "put", "post" ]
     }
 }]

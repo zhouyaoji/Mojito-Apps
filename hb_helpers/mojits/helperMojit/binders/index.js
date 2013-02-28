@@ -48,7 +48,14 @@ YUI.add('helperMojitBinderIndex', function(Y, NAME) {
              * });
              */
         }
+      };
+      function makeTable (title, cols, data, container) {
+             var table = new Y.DataTable({
+                columns: cols,
+                data: d,
+                summary: title
+             });
+             table.render(node.one("#" + container));
+        }
 
-    };
-
-}, '0.0.1', {requires: ['event-mouseenter', 'mojito-client']});
+}, '0.0.1', {requires: ['event-mouseenter', 'mojito-client', 'datatable']});

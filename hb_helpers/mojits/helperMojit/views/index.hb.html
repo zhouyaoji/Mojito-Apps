@@ -1,4 +1,14 @@
 <div id="{{mojit_view_id}}">
-<h3>Friends:</h3>
-{{{list result.people}}}{{firstName}} {{lastName}}
+<h3>YUI Modules</h3>
+<ul>
+{{#each yui.modules}}
+  <li>{{{toLink name user_guide formatter}}}</li>
+{{/each}}
+</ul>
+
+
+<h3>Highlighted Products:</h3>
+{{{highlightModule yui.modules}}
+
 </div>
+
