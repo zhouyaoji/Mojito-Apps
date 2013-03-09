@@ -11,5 +11,16 @@
         </dd>
     </dl>
 </div>
+<div>
+{{#each l}}
+{{.}}
+{{/each}}
+
+   <ul>
+   {{#each yahoo_links}}
+   <li><a href="{{url}}">{{name}}</a></li>
+   {{/each}}
+   </ul>
+</div>
 </body>
 </html>

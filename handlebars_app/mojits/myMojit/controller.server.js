@@ -29,13 +29,20 @@ YUI.add('myMojit', function(Y, NAME) {
          *        to the Mojito API.
          */
         index: function(ac) {
-            ac.models.myMojitModelFoo.getData(function(err, data) {
+             var yahoo_links = [
+               { name: "Yahoo!", url: "http://www.yahoo.com" },
+               { name: "Yahoo! Finance", url: "http://finance.yahoo.com" },
+               { name: "Yahoo! News", url: "http://news.yahoo.com" },
+               { name: "Yahoo! Movies", url: "http://movies.yahoo.com" }
+            ];
+            ac.models.get('myMojitModelFoo').getData(function(err, data) {
                 if (err) {
                     ac.error(err);
                     return;
                 }
-                ac.assets.addCss('./index.css');
                 ac.done({
+                    l: [ "Tom", "Dick", "Harry" ],
+                    yahoo_links: yahoo_links, 
                     status: 'Mojito is working.',
                     data: data,
                     title: "Handlebars"
@@ -45,4 +52,4 @@ YUI.add('myMojit', function(Y, NAME) {
 
     };
 
-}, '0.0.1', {requires: ['mojito', 'myMojitModelFoo']});
+}, '0.0.1', {requires: ['mojito', 'myMojitModelFoo','mojito-models-addon', 'mojito-assets-addon', 'mojito-helpers-addon']});

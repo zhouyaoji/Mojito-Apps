@@ -29,12 +29,12 @@ YUI.add('githubMojit', function(Y, NAME) {
                 }
                 ac.assets.addCss('./index.css');
                 ac.done({
-                    status: 'Mojito is working.',
-                    data: data
+                    title: ac.config.get('title'),
+                    github: data
                 });
             });
         }
 
     };
 
-}, '0.0.1', {requires: ['mojito', 'mojito-assets-addon', 'mojito-models-addon', 'githubMojitModelFoo']});
+}, '0.0.1', {requires: ['mojito', 'mojito-assets-addon', 'mojito-models-addon', 'githubMojitModelFoo', 'mojito-config-addon']});
