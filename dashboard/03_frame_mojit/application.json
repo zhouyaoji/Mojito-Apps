@@ -13,7 +13,7 @@
                   },
                  "assets": {
                     "top": {
-                        "css": ["/static/03_Frame_mojit/assets/trib.css"]
+                        "css": ["/static/03_frame_mojit/assets/trib.css"]
                     }
                  }
               }
