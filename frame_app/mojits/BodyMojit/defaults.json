@@ -2,6 +2,7 @@
     {
         "settings": [ "master" ],
         "config": {
+           "test": "www.havefun.com"
         }
     }
 ]

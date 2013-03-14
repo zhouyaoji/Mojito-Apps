@@ -16,6 +16,7 @@ YUI.add('BodyMojitModelFoo', function(Y, NAME) {
     Y.namespace('mojito.models')[NAME] = {
 
         init: function(config) {
+            Y.log(config);
             this.config = config;
         },
 

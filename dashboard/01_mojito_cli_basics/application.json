@@ -1,5 +1,5 @@
 [
-    {
+   {    
         "settings": [ "master" ],
         "appPort": "8666",
         "specs": {}
