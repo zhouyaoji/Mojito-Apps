@@ -4,6 +4,10 @@
        "path": "/",
        "verbs": ["get"],
        "call": "ms.index"
+   },
+   "test": {
+       "path": "/test",
+       "verbs": ["get"],
+       "call": "test.index"
    }
-
 }]

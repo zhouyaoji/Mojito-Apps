@@ -25,6 +25,14 @@
         "settings": [ "environment:development" ],
         "staticHandling": {
             "forceUpdate": true
+        },
+        "specs": {
+          "test": {
+             "type": "testMojit",
+             "config": {
+               "joe": "App kind of cool"
+            }
+          }
         }
     }
 ]
