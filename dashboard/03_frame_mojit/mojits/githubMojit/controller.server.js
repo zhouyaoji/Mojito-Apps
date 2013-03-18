@@ -52,4 +52,4 @@ YUI.add('githubMojit', function(Y, NAME) {
 
     };
 
-}, '0.0.1', {requires: ['mojito', 'mojito-assets-addon', 'mojito-models-addon', 'githubMojitModelFoo']});
+}, '0.0.1', {requires: ['mojito', 'mojito-assets-addon', 'mojito-models-addon', 'githubMojitModelFoo', 'mojito-params-addon']});
