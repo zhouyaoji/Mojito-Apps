@@ -28,7 +28,7 @@ YUI.add('githubMojit', function(Y, NAME) {
             model.getData({}, function(data){
                 Y.log("githubmojit -index - model.getData:");
                 Y.log(data);
-                var view = ac.params.getFromUrl('custom') || 'index';
+                var view = ac.params.getFromUrl('view') || 'index';
                 if(view =='custom') {
                    ac.assets.addCss('/static/03_frame_mojit/assets/custom.css','top');
                 }
