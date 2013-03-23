@@ -1,10 +1,10 @@
 /*jslint anon:true, sloppy:true, nomen:true*/
-YUI.add('FrameMojit', function(Y, NAME) {
+YUI.add('LayoutMojit', function(Y, NAME) {
 
 /**
- * The FrameMojit module.
+ * The LayoutMojit module.
  *
- * @module FrameMojit
+ * @module LayoutMojit
  */
 
     /**

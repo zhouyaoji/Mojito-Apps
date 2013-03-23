@@ -1,16 +1,16 @@
 /*jslint anon:true, sloppy:true, nomen:true*/
-YUI.add('galleryModelFoo', function(Y, NAME) {
+YUI.add('githubMojitModelFoo', function(Y, NAME) {
 
 /**
- * The galleryModelFoo module.
+ * The githubMojitModelFoo module.
  *
- * @module gallery
+ * @module githubMojit
  */
 
     /**
-     * Constructor for the galleryModelFoo class.
+     * Constructor for the githubMojitModelFoo class.
      *
-     * @class galleryModelFoo
+     * @class githubMojitModelFoo
      * @constructor
      */
     Y.namespace('mojito.models')[NAME] = {
@@ -26,7 +26,7 @@ YUI.add('galleryModelFoo', function(Y, NAME) {
          *        data has been retrieved.
          */
         getData: function(callback) {
-            callback(null, { some: 'data' });
+            callback(null, { watchers: 1, forks: 1 });
         }
 
     };

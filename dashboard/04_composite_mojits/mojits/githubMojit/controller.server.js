@@ -23,20 +23,29 @@ YUI.add('githubMojit', function(Y, NAME) {
          */
         index: function(ac) {
 
-            var model = ac.models.get('StatsModelYQL');
+            var model = ac.models.get('githubMojitModelFoo');
             Y.log(model);
-            model.getData({}, function(data){
+            model.getData(function(err, data){
                 Y.log("githubmojit -index - model.getData:");
+                if (err) {
+                    ac.error(err);
+                    return;
+                }
                 Y.log(data);
-
+                var view = ac.params.getFromUrl('view') || 'index';
+                Y.log(view);
+                if(view =='custom') {
+                   ac.assets.addCss('/static/03_frame_mojit/assets/custom.css','top');
+                } else if(view !='index') {
+                  // In case a view that doesn't exist is chosen
+                  view = 'index';
+                }
                 ac.done({
                     title: "",
-                    watchers: data.watchers,
-                    forks: data.forks
-                });
+                    github: data
+                }, view);
             });
         }
 
     };
-
-}, '0.0.1', {requires: ['mojito', 'mojito-models-addon']});
+}, '0.0.1', {requires: ['mojito', 'mojito-assets-addon', 'mojito-params-addon','mojito-models-addon', 'githubMojitModelFoo']});
