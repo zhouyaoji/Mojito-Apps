@@ -1,16 +1,16 @@
 /*jslint anon:true, sloppy:true, nomen:true*/
-YUI.add('githubMojitModelFoo', function(Y, NAME) {
+YUI.add('FooterMojitModelFoo', function(Y, NAME) {
 
 /**
- * The githubMojitModelFoo module.
+ * The FooterMojitModelFoo module.
  *
- * @module githubMojit
+ * @module FooterMojit
  */
 
     /**
-     * Constructor for the githubMojitModelFoo class.
+     * Constructor for the FooterMojitModelFoo class.
      *
-     * @class githubMojitModelFoo
+     * @class FooterMojitModelFoo
      * @constructor
      */
     Y.namespace('mojito.models')[NAME] = {
@@ -26,7 +26,7 @@ YUI.add('githubMojitModelFoo', function(Y, NAME) {
          *        data has been retrieved.
          */
         getData: function(callback) {
-            callback(null, { watchers: 1, forks: 1 });
+            callback(null, { some: 'data' });
         }
 
     };
