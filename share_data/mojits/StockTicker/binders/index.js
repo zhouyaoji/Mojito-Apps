@@ -30,18 +30,14 @@ YUI.add('StockTickerBinderIndex', function(Y, NAME) {
          * @param node {Node} The DOM node to which this mojit is attached.
          */
         bind: function(node) {
-            console.log(this.mojitProxy.pageData.on, "info", NAME);
-            this.mojitProxy.pageData.on('joeChange', function(e){
+            this.mojitProxy.pageData.on('ticker_listChange', function(e){
+              var ul = node.one("#ticker");
+              var items = e.newVal;
+              for (var i in items) {
+                ul.append("<li>" + items[i] + "</li>");
+              }
               console.log(e); 
             });
-            this.mojitProxy.pageData.set('joe', "hello");
-            /*
-            var list = "<ul>";
-            for (var s in stock_list) {
-              list += "<li>" + s + ": $" + stock_list[s] + "</li>";
-            }
-            list += "</ul>";  
-            */
         }
 
     };

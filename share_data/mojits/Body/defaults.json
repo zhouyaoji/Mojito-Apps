@@ -2,6 +2,7 @@
     {
         "settings": [ "master" ],
         "config": {
+          "ticker_list": ["INTC", "IBM", "MSFT"]
         }
     }
 ]

@@ -22,14 +22,10 @@ YUI.add('Body', function(Y, NAME) {
          *        to the Mojito API.
          */
         index: function(ac) {
-            ac.models.get('BodyModelFoo').getData(function(err, data) {
-                if (err) {
-                    ac.error(err);
-                    return;
-                }
-                ac.assets.addCss('./index.css');
-                ac.composite.done({ title: "Financial News"});
-            });
+           var ticker_list = ac.config.get('ticker_list');
+           ac.pageData.set('ticker_list', ticker_list);
+           ac.assets.addCss('./index.css');
+           ac.composite.done({ title: "Financial News"});
         }
     };
-}, '0.0.1', {requires: ['mojito', 'mojito-assets-addon', 'mojito-models-addon', 'BodyModelFoo', 'mojito-composite-addon']});
+}, '0.0.1', {requires: ['mojito', 'mojito-composite-addon', 'mojito-data-addon', 'mojito-config-addon']});

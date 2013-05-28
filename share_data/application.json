@@ -39,7 +39,14 @@
                     }
                   }
                 }
-              }
+              },
+              "assets": {
+                "top": {
+                  "css": [
+                    "/static/Body/assets/horiz_list.css"
+                  ]
+                }
+              } 
             }
           } 
         }

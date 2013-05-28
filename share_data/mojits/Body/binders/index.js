@@ -30,16 +30,9 @@ YUI.add('BodyBinderIndex', function(Y, NAME) {
          * @param node {Node} The DOM node to which this mojit is attached.
          */
         bind: function(node) {
-            var me = this;
-            this.node = node;
-            node.all('dt').on('mouseenter', function(evt) {
-                var dd = '#dd_' + evt.target.get('text');
-                me.node.one(dd).addClass('sel');
-            });
-            node.all('dt').on('mouseleave', function(evt) {
-                var dd = '#dd_' + evt.target.get('text');
-                me.node.one(dd).removeClass('sel');
-            });
+            var ticker_list = this.mojitProxy.pageData.get('ticker_list');
+            ticker_list.push('ZNGA');
+            setTimeout(this.mojitProxy.pageData.set('ticker_list', ticker_list), 5000);
         }
 
     };

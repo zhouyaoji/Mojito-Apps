@@ -30,16 +30,7 @@ YUI.add('YourStocksBinderIndex', function(Y, NAME) {
          * @param node {Node} The DOM node to which this mojit is attached.
          */
         bind: function(node) {
-            var me = this;
-            this.node = node;
-            node.all('dt').on('mouseenter', function(evt) {
-                var dd = '#dd_' + evt.target.get('text');
-                me.node.one(dd).addClass('sel');
-            });
-            node.all('dt').on('mouseleave', function(evt) {
-                var dd = '#dd_' + evt.target.get('text');
-                me.node.one(dd).removeClass('sel');
-            });
+            this.mojitProxy.pageData.set('ticker', "test");
         }
 
     };

@@ -1,7 +1,5 @@
 [
     {
-        "settings": [ "master" ],
-        "config": {
-        }
+        "settings": [ "master" ]
     }
 ]
