@@ -1,0 +1,10 @@
+<div id="{{mojit_view_id}}">
+      <h2>{{title}}</h2>
+      <div id="stocks">
+      <p></p>
+      {{#page}}
+        {{#each this.page.fav_stocks}}}
+          {{.}}
+        {{/each}}
+      {{/page}}
+</div>

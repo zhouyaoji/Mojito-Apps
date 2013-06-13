@@ -1,0 +1,61 @@
+[
+    {
+        "settings": [ "master" ],
+        "appPort": "8666",
+        "cacheViewTemplates": true,
+        "staticHandling": {
+            "appName": "app",
+            "frameworkName": "mojito",
+            "forceUpdate": true,
+            "cache": false,
+            "maxAge": 600000,
+            "prefix": "static"
+        },
+        "tunnelPrefix": "/tunnel/",
+        "yui": {
+            "config": {
+                "debug": true,
+                "logLevel": "info"
+            }
+        },
+        "specs": {
+          "frame": {
+            "type": "HTMLFrameMojit",
+            "config": {
+              "deploy": true,
+              "title": "Stock Quotes",
+              "child": {
+                "type": "Body",
+                "config": {
+                  "children": {
+                    "display": {
+                      "type": "DisplayQuotes"
+                    },
+                    "fav_stocks": {
+                      "type": "YourStocks"
+                    },
+                    "ticker": {
+                      "type": "StockTicker"
+                    }
+                  }
+                }
+              },
+              "assets": {
+                "top": {
+                  "css": [
+                    "/static/Body/assets/horiz_list.css"
+                  ]
+                }
+              } 
+            }
+          } 
+        }
+    },
+    {
+        "settings": [ "environment:development" ],
+        "staticHandling": {
+            "cache": false,
+            "forceUpdate": true
+        }
+    }
+]
