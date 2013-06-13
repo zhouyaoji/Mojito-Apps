@@ -1,0 +1,9 @@
+[{
+    "settings": [ "master" ],
+    "root": {
+        "path": "/",
+        "call": "groups.index",
+        "verbs": [ "get" ]
+   }
+
+}]
